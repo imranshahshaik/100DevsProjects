@@ -1,0 +1,299 @@
+/* ###################Hamburger Menu Option################ */
+
+li{
+    list-style: none;
+}
+
+.hamburger input[type='checkbox']{
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    display: block;
+    opacity: 0;
+    z-index: 2;
+    background: #000;
+}
+
+.hamburger{
+    position: relative;
+    /* border: 1px solid red; */
+}
+.hamburger-lines{
+    width: 40px;
+    height: 32px;
+    /* background: #ff0000; */
+    position:absolute;
+    top: 15px;
+    left: 5px;
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-lines .line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #000;
+    border-radius: 10px;
+}
+.hamburger-lines .line1{
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+.hamburger-lines .line3{
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger input[type='checkbox']:checked ~ .hamburger-lines .line1{
+    transform: rotate(45deg);
+}
+.hamburger input[type='checkbox']:checked ~ .hamburger-lines .line2{
+    display: none;
+}
+.hamburger input[type='checkbox']:checked ~ .hamburger-lines .line3{
+    transform: rotate(-45deg);
+}
+.menu-items{
+    /* display: none; */
+    max-width: 400px;
+    width: 90%;
+    transform: translateX(-110%);
+    transition: transform 0.5s ease-in-out;
+    margin-left: -10px;
+    margin-top: -15px;
+    padding: 80px 0 10px 20px;
+    background: #232323;
+    color: #fff;
+    border: solid #000; /*default if not given is 1px */
+}
+.menu-items li{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.hamburger input[type='checkbox']:checked ~ .menu-items{
+    /* display: block; */
+    transform: translate(0);
+}
+
+.hamburger input[type='checkbox']:checked ~ .hamburger-lines .line{
+    background-color: white;
+}
+
+/* ##########unsplash random image generator#########
+ */
+
+ .random-img img{
+    width: 500px;
+
+ }
+/* ###########tables topic############## */
+
+table {
+    margin-top: 50%;
+    color: red;
+    animation-name: blues;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards;
+    /* animation-direction: reverse; */
+}
+
+
+
+/* ###########animation & keyframesw########### */
+
+@keyframes blues {
+    from {
+        color: red;
+        width: 100px;
+    }
+
+    to {
+        color: blue;
+        width: 300px;
+    }
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    
+}
+
+.animation {
+    color: white;
+    width: 10%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: red;
+    height: 10%;
+    border-radius: 50%;
+    position: relative;
+    /* animation-name: square;
+    animation-duration: 10s;
+    animation-fill-mode: forwards; 
+    /* animation-iteration-count: 5; 
+    animation-timing-function: ease-in-out; */
+
+    animation: square 3s ease-in 1s reverse 5 forwards;
+}
+
+@keyframes square {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: antiquewhite;
+    }
+
+    25% {
+        top: 0;
+        left: 100px;
+        background-color: rgb(64, 0, 255);
+    }
+
+    50% {
+        top: 100px;
+        left: 100px;
+        background-color: aqua;
+    }
+
+    75% {
+        top: 100px;
+        left: 0;
+        background-color: rgb(111, 255, 0);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: rgb(1, 1, 1);
+    }
+}
+
+
+
+/* ##############transition topic############### */
+
+.transition{
+    width: 10%;
+    height: 10%;
+    color: white;
+    font-size: 1.4rem;
+    background-color: black;
+    /* transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; */
+    /* transition: background 3s ease-in-out,
+                width 2s ease-out,
+                height 3s ease-in; */
+    transition: all 1s ease-in;
+            }
+
+.transition:hover{
+    background-color: red;
+    width: 200px;
+    height: 30px;
+}
+
+
+
+/* ##############transform topic harshit varisht########### EMMETT tdn -txt dec none, m10=mrgn10*/
+.transform{
+    margin: 1.5rem auto;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: goldenrod;
+    transform-origin: 0 100%;
+    transition: transform 1s ease-in-out 0.1s;
+}
+
+.transform:hover{
+    transform: rotate(360deg); 
+    /* transform: scale(4, 2); */
+    /* transform: translateY(50px); */
+    /* transform: skew(18deg,40deg); */
+}
+
+
+
+/* ##########css overlays,position - hover on image text appears ############# */
+.overlays *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    background-color: rgb(8, 9, 8);
+    color: rgb(255, 255, 255);
+    padding: 0.4em 2em;
+    text-decoration: none; 
+    margin-top: 1rem;
+    transition: all 0.4s ease-in;
+    background-color: #454545;
+}
+
+.btn:hover{
+    background: #232323;
+}
+
+.overlays{
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.overlay-content{
+    position:absolute;
+    bottom: 20%;
+    left: 50%;
+    /* border: 3px solid blue; */
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color:rgb(255, 0, 0);
+    opacity: 0;
+    z-index:2;
+    transition: all 0.4s ease-in-out;
+}
+.overlays:hover .overlay-content{
+    opacity:1;
+    bottom: 50%;
+    left: 50%;
+}
+.overlays::after{
+    content: '';
+    display: block;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.889);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.overlays:hover::after{
+    /* when hovered on overlays parent after pseudoelmnt created */
+    opacity: 1;
+}

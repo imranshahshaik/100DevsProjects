@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="transform"></div>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            height:100vh;
+        }
+        .transform{
+            width: 200px;
+            height: 200px;
+            background: #000;
+            margin: 100px auto;
+            transform-origin: 100% 10%;
+            transition: transform 2s;
+        }
+        .transform:hover{
+            transform: translatey(200%);
+            transform: rotate(33deg);
+        
+        }
+    </style>
+</body>
+</html>

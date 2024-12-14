@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ball"></div>
+    <style>
+        body{
+            max-height: 100vh;
+        }
+        .ball{
+            width: 100px;
+            margin: auto;
+            background: #000;
+            height: 100px;
+            border-radius: 50%;
+            animation-name: BALL;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            position: relative;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: BALL 5s ease-in-out 1s 2 normal forwards; */
+        }
+
+        @keyframes BALL {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            20%{
+                top: 200px;
+                left: 15%;
+            }
+            40%{
+                top: 400px;
+                left: 15%;
+            }
+            60%{
+                top:600px;
+                left:0;
+            }
+          
+            80%{
+                top:400px;
+                left:-15%;
+            }
+            90%{
+                top:200px;
+                left: -15%;
+            }
+            100%{
+                top:0;
+                left:0;
+            }}
+    </style>
+</body>
+</html>
