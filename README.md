@@ -2,6 +2,7 @@ This repository is like a side project holder. all my time pass projects, hands-
 
 
 
-[![Preview](./preview\images/recipes.png)](https://islamicrecipes.netlify.app)
+[![Preview](./preview\ images/preview.png)](https://islamicrecipes.netlify.app)
+
 
 Click the image or [here](https://islamicrecipes.netlify.app) to view the live demo.
