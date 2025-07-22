@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"><h1>React Rendering not working</h1></div>
+    <!-- <script>
+        const heading = document.createElement('h1')
+        const root = document.getElementById('root')
+        heading.innerHTML = 'hello with js'
+        root.appendChild(heading)
+    </script> -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const title = React.createElement('h2', { id: 'h2heading' }, React.createElement('p', { className: 'para' }, [React.createElement('span', { className: 'spanTag' }, 'span inside para inside h1'), React.createElement('span', {}, 'sibling')]))
+
+        const root = ReactDOM.createRoot(document.getElementById('root'))
+        root.render(title)
+        console.log(title)
+    </script>
+</body>
+
+</html>
