@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <span>Source</span>
+        <ul>
+            <li>Home</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <button class="btn">Search</button>
+    </header>
+    <div class="hero">
+        <div class="hero-text">
+            <span> TAGLINE</span>
+            <h1>Source helps creators do more of what they love</h1>
+            <form action="">
+                <input type="text" placeholder="search here">
+                <button class = "btn" type="submit">Search</button>
+            </form>
+            <p>A device that eneables collaboration will lessen the chance of work having to be completely redone.</p>
+        </div>
+        <div class="hero-img">
+            <img src="./source-wireframe-max-schneider.png" alt="">
+        </div>
+    </div>
+    <main>
+        <div class="box">
+            <img src="#" alt="">
+            <h5>Feature One</h5>
+            <p>In such a test, the user performs realistic tasks by interacting with the paper prototype</p>
+            <a href="#">First Link</a>
+        </div>
+
+        <div class="box">
+            <img src="#" alt="">
+            <h5>Feature Two</h5>
+            <p>Three techniques of paper prototyping used for usability testing are comps, wireframes</p>
+            <a href="#">Second Link</a>
+        </div>
+        <div class="box">
+            <img src="#" alt="">
+            <h5>Feature Three</h5>
+            <p>Rapid prototyping involves a group of designers who each create a papter prototype</p>
+            <a href="#">Third Link</a>
+        </div>
+        <div class="box">
+            <img src="#" alt="">
+            <h5>Feature Four</h5>
+            <p>Functionality is similarly unimportant, but in this case are closer to the final product.</p>
+            <a href="#">Fourth Link</a>
+        </div>
+    </main>
+    <section>
+        <h2>Collecting information <br> about the problem</h2>
+        <p>In the context of information architecture, information is seperate from both knowledge and data, and lies nebulously between them.</p>
+    </section>
+</body>
+
+</html>
+
+<style>* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  color:#25394a;
+}
+
+body{
+  background-color: #f5f9fc;
+}
+/* #######header styling####3 */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+header ul{
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+header span{
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+/* ########3hero section styliing#####3333 */
+.hero{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.hero .hero-text{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  max-width: 30%;
+}
+
+.hero h1{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+.hero span{
+  color: rgb(102, 99, 99);
+}
+
+.hero input{
+  height: 2rem;
+  width: 75%;
+  padding: 0.4rem;
+  border: none;
+  background-color: rgb(224, 224, 224);
+}
+
+.btn{
+  background: #2f4558;
+  padding: 0.4rem 0.8rem;
+  color: whitesmoke;
+}
+
+/* ######3main section styling$$444 */
+main{
+  display: flex;
+  column-gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+a{
+  text-decoration: none;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+main .box{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+main h5{
+  font-size: 1.2rem;
+}
+
+/* #######3section stylin####### */
+section h2{
+  font-size: 2.2rem;
+  line-height: 1.3;
+  font-family: sans-serif;
+}
+
+section{
+  padding: 1rem 2.4rem 4rem 2.4rem;
+  max-width: 40%;
+}
+
+section p{
+  color:rgb(101, 101, 101);
+  margin-top: 2rem;
+}
+
+/* ########3media queries##########3 */
+@media (screen && min-width: 700px) {
+  body{
+    background: red;  
+  }
+}
+</style>
