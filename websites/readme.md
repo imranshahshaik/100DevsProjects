@@ -11,3 +11,5 @@ https://imamahmad.netlify.app
 https://calculator-bro.netlify.app
 
 https://imran-restaurant.netlify.app
+
+cuisine restaurant https://glowing-paprenjak-0fab0a.netlify.app/
