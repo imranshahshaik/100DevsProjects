@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="This is where your description goes">
+  <meta name="keywords" content="one, two, three">
+  <title>Title in the tab</title>
+
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Which Cocktail?</h1>
+<input type="text" name="" value="">
+<button type="button" onclick="clickHandler()" name="button">Get Cocktail</button>
+
+<h2>Name</h2>
+<img src="" alt="">
+<h3>Instructions</h3>
+
+<!-- 🟢 Move the script here -->
+<script>
+function clickHandler() {
+  const userDrink = document.querySelector('input').value.trim();
+  const query = encodeURIComponent(userDrink); // Safer URL encoding
+  fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`)
+    .then(res => res.json())
+    .then(data => {
+      if (data.drinks) {
+        const drink = data.drinks[0];
+        document.querySelector('h2').innerText = drink.strDrink;
+        document.querySelector('img').src = drink.strDrinkThumb;
+        document.querySelector('h3').innerText = drink.strInstructions; // You forgot this!
+      } else {
+        document.querySelector('h2').innerText = "No drink found 😢";
+        document.querySelector('img').src = "";
+        document.querySelector('h3').innerText = "";
+      }
+    });
+}
+</script>
+
+</body>
+</html>
