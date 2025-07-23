@@ -13,8 +13,10 @@ umid infotech sygnus https://gregarious-moxie-e7b2e7.netlify.app/
 
 responsive restaurant https://imran-restaurant.netlify.app
 
-grit website 100devs https://melodic-toffee-e8f230.netlify.app
+grit website 100devs https://gritiskey.netlify.app
 
-source website 100devs https://fluffy-sunburst-d94281.netlify.app/
+source website 100devs https://go2source.netlify.app
 
-hair salon website 100devs https://dancing-tulumba-10325e.netlify.app/
+hair salon website 100devs https://hairsalon01.netlify.app
+
+cocktaildb website with api integration https://cocktaildb001.netlify.app
